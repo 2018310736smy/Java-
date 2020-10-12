@@ -14,6 +14,7 @@ Java课程作业项目仓库
 (4) pc调用setCPU(CPU c)方法，调用时实参是cpu.
 (5) pc调用setHardDisk(HardDisk h)方法，调用时实参是disk。
 (6) pc调用show（）方法。
+
 ##实验过程
 
 ##核心方法
