@@ -16,6 +16,11 @@ Java课程作业项目仓库
 (6) pc调用show（）方法。
 
 ##实验过程
+    首先，需要建立一个package命名为“src”。建立一个class名为“CPU”，在class中定义speed为int型。使用get获得speed，使用set给speed赋值。
+    再建立一个class名为“HardDisk”。调用Majorattribute方法，获取姓名、编号、上课地点、时间、学分的值。然后用toString方法打印出课程的属性。
+建立一个class名为“students”。“students”继承“xuankexitong”的类、方法。通过toString方法打印出 "Students(学生信息):  姓名：" + Name + "学号：" + Num + "性别："+ Sex + "所选课程"+a。然后定义set函数用于修改名字。
+建立一个class名为“Teachers”。“Teachers”继承“xuankexitong”的类、方法。通过toString方法打印出 "Teachers(老师信息):  姓名：" + Name + "工号：" + Num + "性别："+ Sex + "教授课程"+lesson。
+Test。增加一个学生和一个教师的，分别使用System.out.println(students.toString())System.out.println(teachers.toString())输出信息。
 
 ##核心方法
 
