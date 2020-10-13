@@ -93,7 +93,7 @@ public class Test {
 }
 
 ##实验结果
-![image](图片的网络地址)
+![image](https://github.com/2018310736smy/Java-/blob/main/jieguo.jpg)
 CPU速度:2200
 硬盘容量:200
 
