@@ -93,6 +93,7 @@ public class Test {
 }
 
 ##实验结果
+![image](图片的网络地址)
 CPU速度:2200
 硬盘容量:200
 
