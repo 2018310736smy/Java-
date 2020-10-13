@@ -93,7 +93,6 @@ public class Test {
 }
 
 ##实验结果
-https://github.com/2018310736smy/Java-/blob/main/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.jpg
 CPU速度:2200
 硬盘容量:200
 
