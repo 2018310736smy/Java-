@@ -16,14 +16,81 @@ Java课程作业项目仓库
 (6) pc调用show（）方法。
 
 ##实验过程
-    首先，需要建立一个package命名为“src”。建立一个class名为“CPU”，在class中定义speed为int型。使用get获得speed，使用set给speed赋值。
-    再建立一个class名为“HardDisk”。调用Majorattribute方法，获取姓名、编号、上课地点、时间、学分的值。然后用toString方法打印出课程的属性。
-建立一个class名为“students”。“students”继承“xuankexitong”的类、方法。通过toString方法打印出 "Students(学生信息):  姓名：" + Name + "学号：" + Num + "性别："+ Sex + "所选课程"+a。然后定义set函数用于修改名字。
-建立一个class名为“Teachers”。“Teachers”继承“xuankexitong”的类、方法。通过toString方法打印出 "Teachers(老师信息):  姓名：" + Name + "工号：" + Num + "性别："+ Sex + "教授课程"+lesson。
-Test。增加一个学生和一个教师的，分别使用System.out.println(students.toString())System.out.println(teachers.toString())输出信息。
+    首先，需要建立一个package命名为“src”。建立一个class名为“CPU”，在class中定义speed为int型。调用setspeed方法，获取speed的值。
+    再建立一个class名为“HardDisk”。在HardDisk中定义amount为int型。调用setAmount方法，获取amount的值。
+    再建立一个class名为“Text”。调用static方法，给speed和amount赋值。
+    再建立一个class名为“PC”。调用方法获取cpu，HD的值，然后用System.out.println函数输出信息。
 
-##核心方法
+##核心代码
+CPU.java
 
+package src;
+
+public class CPU {
+	private int speed; 
+	   int getSpeed() {
+	      return speed;
+	   }
+	   public void setSpeed(int speed) {
+	      this.speed = speed;
+	   }
+	}
+  
+HardDisk.java
+
+package src;
+
+public class HardDisk {
+	private int amount; 
+	   int getAmount() {
+	      return amount;
+	   }
+	   public void setAmount(int amount) {
+	      this.amount = amount;
+	   }
+	}
+  
+PC.java
+
+package src;
+import src.CPU;
+import src.HardDisk;
+
+public class PC {
+	CPU cpu;
+    HardDisk HD;
+    void setCPU(CPU cpu) {
+        this.cpu = cpu;
+    }
+     void setHardDisk(HardDisk HD) {
+        this.HD = HD;
+    }
+    void show(){
+       System.out.println("CPU速度:"+cpu.getSpeed());
+       System.out.println("硬盘容量:"+HD.getAmount());
+    }
+}
+
+Text.java
+
+package src;
+
+import src.CPU;
+import src.HardDisk;
+import src.PC;
+
+public class Test {
+	public static void main(String[] args) {
+	       CPU cpu = new CPU();
+	       HardDisk HD=new HardDisk();
+	       cpu.setSpeed(2200);
+	       HD.setAmount(200);
+	       PC pc =new PC();
+	       pc.setCPU(cpu);
+	       pc.setHardDisk(HD);
+	       pc.show();
+	    }
+}
 ##实验结果
 
 ##实验感想
