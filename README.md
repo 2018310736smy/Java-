@@ -22,55 +22,6 @@ Java课程作业项目仓库
     再建立一个class名为“PC”。调用方法获取cpu，HD的值，然后用System.out.println函数输出信息。
 
 ##核心代码
-CPU.java
-
-package src;
-
-public class CPU {
-	private int speed; 
-	   int getSpeed() {
-	      return speed;
-	   }
-	   public void setSpeed(int speed) {
-	      this.speed = speed;
-	   }
-	}
-  
-HardDisk.java
-
-package src;
-
-public class HardDisk {
-	private int amount; 
-	   int getAmount() {
-	      return amount;
-	   }
-	   public void setAmount(int amount) {
-	      this.amount = amount;
-	   }
-	}
-  
-PC.java
-
-package src;
-import src.CPU;
-import src.HardDisk;
-
-public class PC {
-	CPU cpu;
-    HardDisk HD;
-    void setCPU(CPU cpu) {
-        this.cpu = cpu;
-    }
-     void setHardDisk(HardDisk HD) {
-        this.HD = HD;
-    }
-    void show(){
-       System.out.println("CPU速度:"+cpu.getSpeed());
-       System.out.println("硬盘容量:"+HD.getAmount());
-    }
-}
-
 Text.java
 
 package src;
