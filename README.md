@@ -44,7 +44,9 @@ public class Test {
 }
 
 ##实验结果
-![image](https://github.com/2018310736smy/Java-/blob/main/jieguo.jpg)
+![image](https://github.com/2018310736smy/Java-/blob/main/jieguo.jpg) 
+CPU速度：2200
+硬盘容量：200
 
 ##实验感想
     对于我这个初学者而言，把Java、python与基础的C语言相比，如果说python重在对于库的调用，那么Java可能重在对于father的类、属性、方法的继承。所以，在编程的开始，我们要考虑清楚编程对象的需求，考虑清楚个体所具备的属性，并寻找他们的共性。同时还要考虑清楚如何筛选或者聚集相同类或者不同类的个体。
